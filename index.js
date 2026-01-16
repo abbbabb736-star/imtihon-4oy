@@ -1,5 +1,5 @@
 setInterval(() => {
-  console.log("Salom ustoz");
+  console.log("Assalomu aleykum ustoz");
 }, 1000);
 
 function calculate(a, b, hisoblash) {
@@ -20,3 +20,16 @@ console.log(calculate(7, 3, "+"));
 console.log(calculate(2, 1, "*"));
 console.log(calculate(21, 3, "/"));
 console.log(calculate(3, 2, "%"));
+
+function uzun(arr) {
+  let uzun = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].length > uzun.length) {
+      uzun = arr[i];
+    }
+  }
+  return uzun;
+}
+const mevalar = ["anor", "olma", "banan", "ananas"];
+const res = uzun(mevalar);
+console.log("ananas");
